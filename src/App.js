@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import logo from './resources/logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  const [ mdText, setMdText] = useState('')
+
+  const handleChange = (event) => {
+    setMdText(event.target.value);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Markdown Previewer</h1>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <textarea id="editor" value={mdText} onChange={handleChange} ></textarea>
       </header>
     </div>
   );
