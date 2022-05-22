@@ -2,7 +2,7 @@
   "name": "perview-md",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://robdll.github.io/preview-md",
+  "homepage": "https://robdll.github.io/MarkdownPreviewer",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
